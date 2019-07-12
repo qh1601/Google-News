@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
+
+@font-face {
+    font-family: 'Product Sans Regular';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Product Sans Regular'), url('./font/ProductSans-Regular.woff') format('woff');
+}
+
+#wrapper {
+    padding-top: 70px;
+    justify-content: space-between;
+}
+
+app-header {
+    z-index: 0;
+}
+
+app-sidebar { 
+    min-height: 100%;
+    transition: .2s;
+    width: 280px;
+    left: 0;
+    float: left;
+    z-index: -1;
+}
+
+.wrap {
+    transition: .1s;
+    margin-left: 280px;
+}
+.no-margin{
+    margin: 0 !important;
+}
+.main-container {
+    display: flex;
+    flex: 4;
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+app-main-content {
+    flex: 2;
+    margin-right: 100px;
+}
+
+app-right-side {
+    flex: 1;
+}
+
+.closed {
+    position: absolute;
+    left: -500px;
+    transition: .2s;
+}

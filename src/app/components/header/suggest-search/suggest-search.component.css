@@ -1,0 +1,43 @@
+.suggest-search {
+  display: none;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  width: 99.5%;
+  position: absolute;
+  background: #fff;
+  min-height: 200px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+
+.display {
+  display: block;
+}
+
+.suggest-container {
+  padding: 5px 0;
+}
+
+.title {
+  font-size: 12px;
+  color: #616161;
+  padding: 8px 15px;
+}
+
+.suggest {
+  padding: 10px 15px;
+  font-size: 13.5px;
+}
+
+.suggest:hover {
+  background: rgb(235, 235, 235);
+}
+
+
+
+img {
+  border-radius: 50%;
+  max-width: 25px;
+  max-height: 25px;
+  vertical-align: middle;
+  margin-right: 8px;
+}

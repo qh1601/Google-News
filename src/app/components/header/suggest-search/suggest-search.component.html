@@ -1,0 +1,9 @@
+<div [ngClass]="{'display': isShowSuggest }" class="suggest-search">
+  <div class="suggest-container" *ngFor="let option of options">
+    <div class="title">{{option.text}}</div>
+    <div class="suggest"  *ngFor="let sub of option.subitems">
+      <img src={{sub.img}} alt="">
+      <span>{{sub.name}}</span>
+    </div>
+  </div>
+</div>

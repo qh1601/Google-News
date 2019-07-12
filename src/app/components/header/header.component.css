@@ -1,0 +1,180 @@
+.main-header {
+  background: #fff;
+  font: 13px/27px "Roboto", "Arial";
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  min-width: 320px;
+  transition: box-shadow 250ms;
+  box-shadow: 0 4px 5px 0 rgba(0, 0, 0, 0.14), 0 1px 10px 0 rgba(0, 0, 0, 0.12),
+    0 2px 4px -1px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+}
+
+.header-container {
+  padding: 8px;
+  position: relative;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  min-width: min-content;
+}
+
+/* Menu & Logo  */
+.menu-logo {
+  height: 48px;
+  vertical-align: middle;
+  display: flex;
+  align-items: center;
+  flex: 1 0 auto;
+}
+
+.menu {
+  display: inline-block;
+  margin: 0 4px;
+  padding: 12px;
+  overflow: hidden;
+  vertical-align: middle;
+  cursor: pointer;
+  height: 24px;
+  width: 24px;
+  border-radius: 50%;
+}
+
+.menu:hover {
+  background: rgb(237, 237, 238);
+}
+
+.logo-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+  top: 1px;
+}
+
+.logo {
+  display: inline-block;
+  vertical-align: middle;
+  outline: none;
+  color: inherit;
+}
+.logo span {
+  display: inline-block;
+}
+.logo span:first-child {
+  height: 24px;
+  width: 74px;
+  vertical-align: middle;
+}
+
+.logo span:last-child {
+  padding: 0 4px;
+  color: rgb(95, 99, 104);
+  font-family: "Product Sans Regular";
+  font-size: 22px;
+  line-height: 24px;
+  position: relative;
+  top: -1.5px;
+  vertical-align: middle;
+}
+
+/* Search Box */
+.search-box {
+  position: relative;
+  flex: 3 1 auto;
+  background: #f0f2f6;
+  border-radius: 8px;
+}
+
+.search-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.search-icon i,
+.app-icon i, .clear-icon i {
+  padding: 8px;
+}
+.search-icon {
+  margin-left: 10px;
+}
+
+.search-icon:hover i, .clear-icon:hover i {
+  border-radius: 50%;
+  background: #dfe1e5;
+}
+
+.down-icon, .clear-icon {
+  font-size: 1.5rem;
+  margin-right: 10px;
+}
+
+.search-input {
+  flex: 1 1 auto;
+}
+
+.search-box input {
+  width: 100%;
+  font-size: 15px;
+  border: 1px solid transparent;
+  padding: 13px 16px;
+  box-sizing: border-box;
+  background: transparent;
+  outline: none;
+  margin-left: -12px;
+}
+
+.search-box input::placeholder {
+  color: #b8baba;
+  font-size: 16px;
+  letter-spacing: 0.5px;
+}
+
+.border-lr {
+  border-left: 1px solid rgb(230, 230, 230);
+  border-right: 1px solid rgb(230, 230, 230);
+  border-radius: 0;
+  background: #fff;
+}
+
+/* App Account */
+
+.app-account {
+  flex: 1 1 auto;
+}
+
+.app-account.container {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 0 30px;
+}
+
+.app-icon {
+  margin-right: 15px;
+  font-size: 1.4rem;
+}
+
+.app-icon:hover i {
+  border-radius: 50%;
+  background: #eef0f0;
+}
+
+.app-icon i {
+  padding: 7px;
+}
+
+.account a {
+  cursor: pointer;
+  display: inline-block;
+  padding: 5px 25px;
+  background: #1a73e8;
+  color: #fff;
+  font-size: 15px;
+  border: 1px solid transparent;
+  border-radius: 5px;
+}

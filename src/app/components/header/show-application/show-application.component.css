@@ -1,0 +1,217 @@
+.google-app {
+  display: none;
+  margin-top: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.2);
+  position: absolute;
+  background: #fff;
+  max-height: 565px;
+  min-height: 196px;
+  height: 496px;
+  overflow-y: auto;
+  width: 322px;
+}
+
+.google-app-display {
+  display: block;
+}
+
+.list-app {
+  position: relative;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  margin: 0;
+  min-height: 100px;
+  padding: 35px 20px 20px 20px;
+  text-align: left;
+  white-space: normal;
+  width: 265px;
+}
+
+.list-app-item {
+  cursor: pointer;
+  padding: 1px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  vertical-align: top;
+  color: black;
+  height: 98px;
+  width: 84px;
+  border: 1px solid transparent;
+}
+
+.list-app-item:hover {
+  border: 1px solid rgb(229, 229, 229);
+}
+
+.app-img {
+  display: inline-block;
+  height: 64px;
+  vertical-align: top;
+  width: 64px;
+  background: url("https://ssl.gstatic.com/gb/images/p1_df8c3919.png");
+  background-size: 64px 2617px;
+}
+
+.app-info {
+  display: block;
+  line-height: 20px;
+  color: rgba(0, 0, 0, 0.87);
+  font-size: 13px;
+}
+
+.img-1 {
+  background-position: 0 -2001px;
+}
+
+.img-2 {
+  background-position: 0 -1725px;
+}
+
+.img-3 {
+  background-position: 0 -1656px;
+}
+
+.img-4 {
+  background-position: 0 -1035px;
+}
+
+.img-5 {
+  background-position: 0 -1518px;
+}
+
+.img-6 {
+  background-position: 0 -1380px;
+}
+
+.img-7 {
+  background-position: 0 -621px;
+}
+
+.img-8 {
+  background-position: 0 -2139px;
+}
+
+.img-9 {
+  background-position: 0 -345px;
+}
+
+.img-10 {
+  background-position: 0 -207px;
+}
+
+.img-11 {
+  background-position: 0 -414px;
+}
+
+.img-12 {
+  background-position: 0 -2070px;
+}
+
+.img-13 {
+  background-position: 0 -690px;
+}
+
+.img-14 {
+  background-position: 0 -2346px;
+}
+
+.img-15 {
+  background-position: 0 -1173px;
+}
+
+.img-16 {
+  background-position: 0 -1587px;
+}
+
+.img-17 {
+  background-position: 0 -552px;
+}
+
+.img-18 {
+  background-position: 0 -828px;
+}
+
+.img-19 {
+  background-position: 0 -1449px;
+}
+
+.img-20 {
+  background: url("https://www.google.com/images/icons/product/keep-512.png")
+    center center/cover !important;
+}
+
+.img-21 {
+  background-position: 0 -483px;
+}
+
+.img-22 {
+  background-position: 0 -759px;
+}
+
+.img-23 {
+  background-position: 0 -2208px;
+}
+
+.img-24 {
+  background-position: 0 -138px;
+}
+
+.img-25 {
+  background-position: 0 -1932px;
+}
+
+.img-26 {
+  background: url("https://ssl.gstatic.com/classroom/ic_product_classroom_48.png")
+    center/cover !important;
+}
+
+.img-27 {
+  background: url("https://ssl.gstatic.com/images/branding/product/1x/cloud_print_48dp.png")
+    center/cover !important;
+}
+
+.img-logo {
+  border: 0;
+  margin: 8px;
+  height: 48px;
+  width: 48px;
+}
+
+.more-app {
+  cursor: pointer;
+  background: #f5f5f5;
+  color: rgba(0, 0, 0, 0.87);
+  text-decoration: none;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+  width: 300px;
+}
+
+.app-line {
+  display: block;
+  align-self: center;
+  border-bottom: 1px solid #ebebeb;
+  height: 20px;
+  margin: 0 auto;
+  width: 200px;
+}
+
+.hide {
+  display: none;
+}
+
+.app-more-link {
+  cursor: pointer;
+  font-size: 13px;
+  display: block;
+  line-height: 40px;
+  text-align: center;
+}
+
+.app-more-link:hover {
+  text-decoration: underline;
+}
+

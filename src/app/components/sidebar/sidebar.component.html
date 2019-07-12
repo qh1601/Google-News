@@ -1,0 +1,26 @@
+<div class="sidebar">
+    <div class="category">
+        <a *ngFor="let option of categories; let i = index; let first = first" class="option"
+            [ngClass]="{'b-b': i==3,'p-t': i==4, 'actived': i==selectedIndex}" (click)="changeCategory(i,option.data)">
+            <div><i class="material-icons-extended">{{option.icon}}</i></div>
+            <div><span>{{option.text}}</span></div>
+        </a>
+    </div>
+    <div class="further">
+        <a class="language">
+            <span>Language & region</span>
+            <span class="small">English(United States)</span>
+        </a>
+        <a>Setting</a>
+        <a href="https://play.google.com/store/apps/details?id=com.google.android.apps.magazines&referrer=news.google.com?utm_source=web&utm_medium=menu&utm_campaign=side_menu_promotion"
+            target="_blank">Get the Android app <i class="material-icons-extended">open_in_new</i></a>
+        <a href="https://itunes.apple.com/US/app/apple-store/id459182288?pt=9008&ct=Web%20Side%20Promotion&mt=8&l=en-US"
+            target="_blank">Get the iOS app <i class="material-icons-extended">open_in_new</i></a>
+        <a>Send feedback</a>
+        <a href="https://support.google.com/googlenews/?p=web&hl=en&authuser=0" target="_blank">Help <i
+                class="material-icons-extended">open_in_new</i></a>
+    </div>
+    <div class="footer">
+        <a *ngFor="let footer of footers" href={{footer.link}} target="_blank">{{footer.text}}</a>
+    </div>
+</div>

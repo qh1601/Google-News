@@ -1,0 +1,57 @@
+<div class="search-form" [ngClass]="{'display': isDisplay}" (click)="clickedInside($event)">
+    <div class="search-group">
+        <div class="search-info">
+            Narrow your search results
+        </div>
+        <div class="search-option">
+            <div class="search-title">
+                Exact phrase
+            </div>
+            <div class="search-form-input">
+                <input [(ngModel)]="exact" (keyup)="toggleSearch(search)" type="text">
+            </div>
+        </div>
+        <div class="search-option">
+            <div class="search-title">
+                Has words
+            </div>
+            <div class="search-form-input">
+                <input (keyup)="toggleSearch(search)" [(ngModel)]="hasword" type="text">
+            </div>
+        </div>
+        <div class="search-option">
+            <div class="search-title">
+                Exclude words
+            </div>
+            <div class="search-form-input">
+                <input (keyup)="toggleSearch(search)" [(ngModel)]="excludeword" type="text">
+            </div>
+        </div>
+        <div class="search-option">
+            <div class="search-title">
+                Website
+            </div>
+            <div class="search-form-input">
+                <input (keyup)="toggleSearch(search)" [(ngModel)]="website" type="text">
+            </div>
+        </div>
+        <div class="search-option">
+            <div class="search-title">
+                Date
+            </div>
+            <div class="search-form-select">
+                <select>
+                    <option value="anytime">Anytime</option>
+                    <option value="pasthour">Past hour</option>
+                    <option value="past24hour">Past 24 hours</option>
+                    <option value="pastweek">Past week</option>
+                    <option value="pastyear">Past week</option>
+                </select>
+            </div>
+        </div>
+        <div class="search-group-button">
+            <button (click)="clearAll(search)" class="btn">Clear</button>
+            <button #search [disabled]="isDisabled" class="btn">Search</button>
+        </div>
+    </div>
+</div>

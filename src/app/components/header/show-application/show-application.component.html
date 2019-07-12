@@ -1,0 +1,127 @@
+<div class="google-app" id="showmore" [ngClass]="{'google-app-display': isShowApp}" (scroll)="onScroll($event)"
+  (click)="clickedInside($event)">
+  <ul class="list-app">
+    <li class="list-app-item">
+      <span class="app-img img-1"></span>
+      <span class="app-info">Account</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-2"></span>
+      <span class="app-info">Gmail</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-3"></span>
+      <span class="app-info">Drive</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-4"></span>
+      <span class="app-info">Docs</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-5"></span>
+      <span class="app-info">Sheets</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-6"></span>
+      <span class="app-info">Slides</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-7"></span>
+      <span class="app-info">Calendar</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-8"></span>
+      <span class="app-info">Chat</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-9"></span>
+      <span class="app-info">Meet</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-10"></span>
+      <span class="app-info">Google+</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-11"></span>
+      <span class="app-info">Sites</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-12"></span>
+      <span class="app-info">Contacts</span>
+    </li>
+  </ul>
+  <a (click)="showMore()" [ngClass]="{'hide': isHide}" class="more-app">More</a>
+  <span class="app-line"></span>
+  <ul [ngClass]="{'hide': !isHide}" class="list-app">
+    <li class="list-app-item">
+      <span class="app-img img-13"></span>
+      <span class="app-info">Groups</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-14"></span>
+      <span class="app-info">Youtube</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-15"></span>
+      <span class="app-info">News</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-16"></span>
+      <span class="app-info">Photos</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-17"></span>
+      <span class="app-info">Vault</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-18"></span>
+      <span class="app-info">Hangouts</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-19"></span>
+      <span class="app-info">Forms</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-20"></span>
+      <span class="app-info">Keep</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-21"></span>
+      <span class="app-info">Jamboard</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-22"></span>
+      <span class="app-info">Cloud Search</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-23"></span>
+      <span class="app-info">Earth</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-24"></span>
+      <span class="app-info">Collections</span>
+    </li>
+    <li class="list-app-item">
+      <span class="app-img img-25"></span>
+      <span class="app-info">Work Insights</span>
+    </li>
+  </ul>
+  <span class="app-line"></span>
+  <ul [ngClass]="{'hide': !isHide}" class="list-app">
+    <li class="list-app-item">
+      <img class="img-logo" src="https://ssl.gstatic.com/classroom/ic_product_classroom_48.png">
+      <span class="app-info">Classroom</span>
+    </li>
+    <li class="list-app-item">
+      <img class="img-logo" src="https://ssl.gstatic.com/images/branding/product/1x/cloud_print_48dp.png">
+      <span class="app-info">Cloud Print</span>
+    </li>
+    <li class="list-app-item">
+      <img
+        src="https://slack-files2.s3-us-west-2.amazonaws.com/avatars/2017-07-19/215046467333_922cb5befd8bf1f59b71_512.png"
+        class="img-logo">
+      <span class="app-info mavenlink">Mavenlink</span>
+    </li>
+  </ul>
+  <a class="app-more-link">More from G Suite Marketplace</a>
+</div>

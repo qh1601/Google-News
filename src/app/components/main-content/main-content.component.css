@@ -1,0 +1,33 @@
+.main-content {
+    margin-top: 40px;
+    width: 100%;
+    margin-left: 20px;
+}
+
+.head-title {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-title h3 {
+    cursor: pointer;
+    font-weight: 600;
+}
+
+.head-title a {
+    font-size: 13px;
+    font-weight: 600;
+    align-self: flex-end;
+    color: #4285f4;
+    cursor: pointer;
+}
+
+.btn-reload {
+    cursor: pointer;
+    color: #fff !important;
+    padding: 10px 20px;
+    background: #FC427B;
+    border: none;
+    border-radius: 5px;
+    outline: none;
+}

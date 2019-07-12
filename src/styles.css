@@ -1,0 +1,30 @@
+
+/* Variables */
+:root {
+    --light: #fff;
+    --primary: #5f6368;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* Usable */
+
+html {
+    font-family: 'Roboto', Arial, sans-serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #333;
+}
+
+i {
+    color: #5f6368;
+    cursor: pointer;
+}

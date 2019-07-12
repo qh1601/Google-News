@@ -1,0 +1,48 @@
+<header class="main-header">
+    <div class="header-container">
+        <div class="menu-logo">
+            <div (click)="toggleSidebar()" class="menu">
+                <span class="material-icons-extended">menu</span>
+            </div>
+            <div class="logo-container">
+                <a href="" class="logo">
+                    <span><img src="https://www.gstatic.com/images/branding/googlelogo/svg/googlelogo_clr_74x24px.svg"
+                            alt=""></span>
+                    <span>News</span>
+                </a>
+            </div>
+        </div>
+
+        <div class="search-box">
+            <div class="search-container" [ngClass]="{'border-lr': isShowSuggest}">
+                <a class="search-icon">
+                    <i class="material-icons-extended">search</i>
+                </a>
+                <div class="search-input">
+                    <input #searchInput [(ngModel)]="inputValue" (keyup)="toggleClear()" (focusout)="hideSuggest()"
+                        (focus)="showSuggest()" type="text" placeholder="Search for topics, location & sources">
+                </div>
+                <a [ngStyle]="{'visibility': isClear? 'hidden':'visible'}" (click)="clearInput(searchInput)" class="clear-icon">
+                    <i class="mdi mdi-close"></i>
+                </a>
+                <a (click)="toggleForm()" class="down-icon">
+                    <i class="mdi" id="open-form" [class.mdi-menu-down]="!isShowForm" [class.mdi-menu-up]="isShowForm"></i>
+                </a>
+            </div>
+            <app-suggest-search></app-suggest-search>
+            <app-search-form (iconChange)="changeIcon($event)"></app-search-form>
+        </div>
+        <div class="app-account">
+            <div class="app-account container">
+                <div class="app-icon">
+                    <i id="show-app" (click)="toggleShowApp()" class="mdi mdi-apps"></i>
+                </div>
+                <div class="account">
+                    <a>Sign in</a>
+                </div>
+            </div>
+            <app-show-application></app-show-application>
+        </div>
+    </div>
+
+</header>
